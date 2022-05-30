@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.addOrder.AddOrderStep2Activity">
+
+    <include layout="@layout/top_bar" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Good type:"
+                android:textColor="@color/text_black_1_30"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/goodGroup"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/type1"
+                    android:layout_width="match_parent"
+                    android:checked="true"
+                    android:text="Furniture"
+                    android:textColor="@color/text_black_1"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/type2"
+                    android:layout_width="match_parent"
+                    android:text="Dry goods"
+                    android:textColor="@color/text_black_1"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/type3"
+                    android:layout_width="match_parent"
+                    android:text="Food"
+                    android:textColor="@color/text_black_1"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/type4"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/text_black_1"
+                    android:text="Building material"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/type5"
+                    android:clickable="false"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/goodTypeOtherEdit"
+                    android:layout_width="match_parent"
+                    android:hint="Other"
+                    android:textColor="@color/text_black_1"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Weight">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/weight"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Width">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/width"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Length">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/length"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:textSize="18sp"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="Height">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/height"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:textSize="18sp"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Vehicle type:"
+                android:textColor="@color/text_black_1_30"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/vehicleGroup"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/vType1"
+                    android:layout_width="match_parent"
+                    android:checked="true"
+                    android:text="Truck"
+                    android:textColor="@color/text_black_1"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/vType2"
+                    android:layout_width="match_parent"
+                    android:text="Van"
+                    android:textColor="@color/text_black_1"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/vType3"
+                    android:layout_width="match_parent"
+                    android:text="Refrigerated truck"
+                    android:textColor="@color/text_black_1"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/vType4"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/text_black_1"
+                    android:text="Mini-truck"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/vType5"
+                    android:clickable="false"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/vehicleTypeOtherEdit"
+                    android:layout_width="match_parent"
+                    android:hint="Other"
+                    android:textColor="@color/text_black_1"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/blue"
+                android:text="Next"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
